@@ -1,4 +1,4 @@
-# Front-end Coding Challenge
+# Frontend Coding Challenge
 
 ## Idea of the App 
 The task is to implement a small webapp that will list the most starred Github repos that were created in the last 30 days. 
@@ -15,16 +15,26 @@ You'll be fetching the sorted JSON data directly from the Github API (Github API
   * Username and avatar of the owner. 
 * As a User I should be able to keep scrolling and new results should appear (pagination).
 
-## Things to keep in mind 🚨
-* Features are less important than code quality. Put more focus on code quality and less on speed and number of features implemented. 
-* Your code will be evaluated based on: code structure, programming best practices, legibility (and not number of features implemented or speed). 
-* The git commit history (and git commit messages) will be also evaluated.
-* Do not forget to include few details about the project in the README (e.g explain choice of libraries, how to run it ...) 
+Extra points:
+
+* As a User I should be able to click on the name of the repo to open a modal window the datails requested above
+* As a User I should be able only on the modal window to rate the repo using a stars model (5 stars rating mode)
+* As a User I should be able to close the modal window and see the given rating on the right side of the repo name
+
+## Things to keep in mind
+
+Please understand that this challenge is not decisive if you are applying to work at Circunomics. This is just an opportunity for us both to work together and get to know each other in a more technical way.
+
+* Features are as important as code quality. Try to balance between code quality and number of features implemented
+* Your code will be evaluated in this order based on: code structure, programming best practices, legibility and number of features implemented or speed
+* The git commit history (and git commit messages) will be also evaluated
+* Please run tests and provide the results of the first and last run
+* Do not forget to include few details about the project in the PROJECT.md (e.g explain choice of libraries, how to run it ...) 
 
 ## How to get the data from Github 
-To get the most starred Github repos created in the last 30 days (relative to 2017-11-22), you'll need to call the following endpoint : 
+To get the most starred Github repos created in the last 30 days (relative to 2021-Feb-[Start_Date]), you'll need to call the following endpoint : 
 
-`https://api.github.com/search/repositories?q=created:>2017-10-22&sort=stars&order=desc`
+`https://api.github.com/search/repositories?q=created:>[Start_Date]&sort=stars&order=desc`
 
 The JSON data from Github will be paginated (you'll receive around 100 repos per JSON page). 
 
@@ -34,26 +44,22 @@ To get the 2nd page, you add `&page=2` to the end of your API request :
 
 To get the 3rd page, you add `&page=3` ... etc
 
-You can read more about the Github API over [here](https://developer.github.com/v3/search/#search-repositories
-).
+You can read more about the Github API over [here](https://docs.github.com/en/rest/reference/search#search-repositories).
 
 ## Mockups
-![alt text](https://raw.githubusercontent.com/hiddenfounders/frontend-coding-challenge/master/mockup.png)
+![alt text](https://bitbucket.org/cesar_prados/frontendcodingchallenge/raw/c051c14f98b7ad71921709a54a8035f87e3d9860/mockup.png)
 
 Here's what each element represents :
 
-![alt text](https://raw.githubusercontent.com/hiddenfounders/frontend-coding-challenge/master/row_explained.png)
+![alt text](https://bitbucket.org/cesar_prados/frontendcodingchallenge/raw/c051c14f98b7ad71921709a54a8035f87e3d9860/row_explained.png)
 
 ## Technologies to use 
-Choose whatever front-end technology you're most familiar with. But here's some of the technologies our teams are familiar with:
-* React
-* Vue
 * Angular
 
 ## How to submit the challenge solution? 
-Now after you finished your app and we assume that you already pushed it to your GitHub account, if so please follow the instructions below:
+Now after you finished your app and we assume that you already pushed it to your repo account, if so please follow the instructions below:
 
 1. Set the Repo privacy:
-   - If the repo is sensitive and you're not comfortable sharing it publicly please give access to this username: [salimbraksa](https://github.com/salimbraksa).
+   - If the repo is sensitive and you're not comfortable sharing it publicly please tell us where you are going to push the code and we will provide you with an user that you can give access to.
    - If it's public go to the next step
-2. Send the repo's link to this email: `careers@gemography.com`.
+2. Send the repo's link to this email: `jobs@circunomics.com`.
