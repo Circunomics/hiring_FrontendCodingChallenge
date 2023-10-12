@@ -47,11 +47,11 @@ To get the 3rd page, you add `&page=3` ... etc
 You can read more about the Github API over [here](https://docs.github.com/en/rest/reference/search#search-repositories).
 
 ## Mockups
-![alt text]([https://bitbucket.org/cesar_prados/frontendcodingchallenge/raw/c051c14f98b7ad71921709a54a8035f87e3d9860/mockup.png](https://github.com/Circunomics/hiring_FrontendCodingChallenge/blob/master/mockup.png?raw=true))
+![alt text]([https://github.com/Circunomics/hiring_FrontendCodingChallenge/blob/master/mockup.png?raw=true])
 
 Here's what each element represents :
 
-![alt text]([https://bitbucket.org/cesar_prados/frontendcodingchallenge/raw/c051c14f98b7ad71921709a54a8035f87e3d9860/row_explained.png](https://github.com/Circunomics/hiring_FrontendCodingChallenge/blob/master/row_explained.png?raw=true)
+![alt text]([https://github.com/Circunomics/hiring_FrontendCodingChallenge/blob/master/row_explained.png?raw=true])
 
 ## Technologies to use 
 * Angular
