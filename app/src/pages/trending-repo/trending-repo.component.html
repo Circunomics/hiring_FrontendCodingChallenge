@@ -1,5 +1,10 @@
 <div class="trending-repo">
-  <ul class="trending-repo__list">
+  <ul class="trending-repo__list"
+      infiniteScroll
+      [infiniteScrollDistance]="3"
+      [infiniteScrollThrottle]="50"
+      (scrolled)="loadRepos()"
+  >
     @for (repo of repos; track repo) {
       <li class="trending-repo__list__item">
         <img [src]="repo.avatar" class="trending-repo__list__item__left">
@@ -20,6 +25,14 @@
           </div>
         </div>
       </li>
+    }
+
+    @if (loading()) {
+      <ng-container>
+        @for (placeholder of placeholders; track placeholder) {
+          <li class="trending-repo__list__placeholder"></li>
+        }
+      </ng-container>
     }
   </ul>
 </div>

@@ -1,7 +1,19 @@
+$image-dem: 95px;
+
 .trending-repo {
   &__list {
     list-style: none;
     padding: 0;
+
+    &__placeholder {
+      height: $image-dem;
+      width: 100%;
+      background: #333;
+      margin: .5rem;
+      animation: blink .8s infinite alternate;
+      border-radius: 5px;
+    }
+
     &__item {
       display: flex;
       align-items: stretch;
@@ -13,8 +25,8 @@
       }
 
       &__left {
-        height: 95px;
-        width: 95px;
+        height: $image-dem;
+        width: $image-dem;
       }
 
       &__right {
@@ -51,5 +63,15 @@
         }
       }
     }
+  }
+}
+
+
+@keyframes blink {
+  0% {
+    background-color: #333;
+  }
+  100% {
+    background-color: #101010;
   }
 }

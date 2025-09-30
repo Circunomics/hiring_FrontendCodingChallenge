@@ -1,7 +1,13 @@
 <div class="app">
-  <div class="app__header"></div>
+  <div class="app__header">
+    @if (!isHeaderNavElementActive('trending-repos')) {
+      <a routerLink="trending-repos">Repos</a>
+    }
+  </div>
   <div class="app__content">
     <router-outlet></router-outlet>
   </div>
-  <div class="app__footer"></div>
+  <div class="app__footer">
+    <!-- TODO footer if exist or remove -->
+  </div>
 </div>
