@@ -6,7 +6,7 @@ $image-dem: 95px;
     padding: 0;
 
     &__placeholder {
-      height: $image-dem;
+      height: calc($image-dem / 2);
       width: 100%;
       background: #333;
       margin: .5rem;
