@@ -1,0 +1,25 @@
+<div class="trending-repo">
+  <ul class="trending-repo__list">
+    @for (repo of repos; track repo) {
+      <li class="trending-repo__list__item">
+        <img [src]="repo.avatar" class="trending-repo__list__item__left">
+        <div class="trending-repo__list__item__right">
+          <div class="trending-repo__list__item__right__header">
+            {{repo.name}}
+          </div>
+          <div class="trending-repo__list__item__right__description">
+            {{repo.description}}
+          </div>
+          <div class="trending-repo__list__item__right__info">
+            <div class="trending-repo__list__item__right__info__container">
+              <app-badge [value]="'stars: ' + repo.stars"></app-badge>
+              <app-badge [value]="'issues: ' + repo.issues "></app-badge>
+              @let date = repo.submitted | extractDay;
+              <span>{{date ? 'submitted ' + date : ''}} by {{repo.author}}</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    }
+  </ul>
+</div>

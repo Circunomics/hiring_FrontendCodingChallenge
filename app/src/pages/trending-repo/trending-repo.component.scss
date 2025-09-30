@@ -1,0 +1,55 @@
+.trending-repo {
+  &__list {
+    list-style: none;
+    padding: 0;
+    &__item {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      gap: .5rem;
+
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+
+      &__left {
+        height: 95px;
+        width: 95px;
+      }
+
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: .325rem;
+
+        &__header {
+          font-size: 1.1em;
+        }
+        &__description {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          line-clamp: 2;
+          -webkit-box-orient: vertical;
+          font-size: .8em;
+          font-style: italic;
+        }
+        &__info {
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-start;
+          font-size: .7em;
+          flex: 1 1 auto;
+
+          &__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: .5rem;
+          }
+        }
+      }
+    }
+  }
+}
