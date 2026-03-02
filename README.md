@@ -26,10 +26,9 @@ Extra points:
 Please understand that this challenge is not decisive if you are applying to work at Circunomics. This is just an opportunity for us both to work together and get to know each other in a more technical way.
 
 * Features are as important as code quality. Try to balance between code quality and number of features implemented
-* Your code will be evaluated in this order based on: code structure, programming best practices, legibility and number of features implemented or speed
 * The git commit history (and git commit messages) will be also evaluated
 * Please run tests and provide the results of the first and last run
-* Do not forget to include few details about the project in the PROJECT.md (e.g explain choice of libraries, how to run it ...) 
+* Do not forget to include a few details about the project in the PROJECT.md (e.g explain choice of libraries, how to run it ...) 
 
 ## How to get the data from Github 
 To get the most starred Github repos created in the last 30 days (relative to 2021-Feb-[Start_Date]), you'll need to call the following endpoint : 
@@ -57,9 +56,9 @@ Here's what each element represents :
 * Angular
 
 ## How to submit the challenge solution? 
-Now after you finished your app and we assume that you already pushed it to your repo account, if so please follow the instructions below:
+Now after you finished your app and we assume that you already pushed it to your repo account, please follow the instructions below:
 
 1. Set the Repo privacy:
-   - If the repo is sensitive and you're not comfortable sharing it publicly please tell us where you are going to push the code and we will provide you with an user that you can give access to.
+   - If the repo is sensitive and you're not comfortable sharing it publicly, please tell us where you are going to push the code and we will provide you with a user that you can give access to.
    - If it's public go to the next step
 2. Send the repo's link to this email: `jobs@circunomics.com`.
